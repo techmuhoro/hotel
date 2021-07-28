@@ -1,0 +1,98 @@
+.about {
+  margin: 100px 0;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.about .about-wrapper {
+  /* border: springgreen 2px solid; */
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.about .heading {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 80px;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.about .background {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 30px;
+  transform-origin: center;
+  transform: rotate(-2deg);
+  background: linear-gradient(
+    to bottom right,
+    rgb(28, 162, 240),
+    rgb(102, 186, 235),
+    rgb(141, 196, 228)
+  );
+  transform-style: preserve-3d;
+}
+.about .behind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 350px;
+  border-radius: 30px;
+  transform-origin: center;
+  transform: rotate(1deg);
+  background: rgba(128, 128, 128, 0.472);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+.about .img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: -25px;
+  object-fit: contain;
+}
+.about .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.about .left {
+  width: 400px;
+  height: 310px;
+  border-radius: 20px;
+  background: white;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+.fade {
+  width: 200px;
+  height: 200px;
+  background: royalblue;
+  margin: 50px auto;
+}
+@media screen and (max-width: 1000px) {
+  .about .left {
+    width: 300px;
+    height: 210px;
+  }
+  .about .img {
+    width: 250px;
+    height: 300px;
+  }
+  .about .background {
+    height: 250px;
+  }
+  .about .behind {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .about .about-wrapper {
+    width: 100%;
+  }
+  .about .heading {
+    width: 100%;
+  }
+}

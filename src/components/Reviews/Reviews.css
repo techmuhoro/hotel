@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+.reviews {
+  width: 100%;
+  height: 500px;
+  /* border: 2px solid black; */
+  margin-top: 100px;
+  margin-bottom: 80px;
+  /* margin: 30px 0; */
+  background-color: rgb(240, 240, 240);
+}
+.reviews > h1 {
+  width: 80%;
+  padding-top: 20px;
+  margin: 20px auto;
+  font-size: 3rem;
+}
+.reviews img {
+  border-radius: 50%;
+}
+.reviews .reviews-wrapper {
+  width: 80%;
+  /* height: 100%; */
+  /* border: 2px solid hotpink; */
+  margin: auto;
+  /* background-color: red; */
+}
+.reviews div[class*='number-slide'] {
+  /* height: 300px; */
+  background-color: #fff;
+  /* border: 1px solid chartreuse; */
+  /* padding: 20px 30px; */
+  position: relative;
+}
+.keen-slider {
+  padding: 0px 10px;
+}
+.reviews .slide-wrapper .quote {
+  padding: 20px 20px;
+}
+.reviews .slide-wrapper .quote i {
+  font-size: 3rem;
+}
+.reviews .slide-wrapper .quote p:first-child {
+  margin-bottom: 20px;
+}
+.reviews .slide-wrapper .quote p:last-child {
+  line-height: 1.3rem;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+  color: rgb(54, 54, 93);
+}
+.reviews .slide-wrapper .user {
+  background: linear-gradient(
+    to bottom right,
+    rgb(47, 47, 255) 40%,
+    rgba(119, 119, 238, 0.87),
+    rgba(92, 92, 202, 0.656)
+  );
+  display: flex;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+  height: 23%;
+  bottom: 0;
+  padding: 0 30px;
+  color: #fff;
+}
+.reviews .number-slide2 .user {
+  background: linear-gradient(
+    to bottom right,
+    orange 40%,
+    rgb(255, 193, 77),
+    rgba(255, 193, 77, 0.7)
+  );
+}
+.reviews .number-slide3 .user {
+  background: linear-gradient(
+    to bottom right,
+    purple 40%,
+    rgb(133, 55, 133),
+    rgba(133, 55, 133, 0.7)
+  );
+}
+.reviews .number-slide4 .user {
+  background: linear-gradient(
+    to bottom right,
+    rgb(1, 221, 221) 40%,
+    rgb(167, 238, 238),
+    rgba(167, 238, 238, 0.7)
+  );
+}
+.reviews .number-slide5 .user {
+  background: linear-gradient(
+    to bottom right,
+    green 40%,
+    rgb(100, 194, 100),
+    rgba(58, 221, 58, 0.7)
+  );
+}
+.reviews .number-slide6 .user {
+  background: linear-gradient(
+    to bottom right,
+    crimson 40%,
+    rgb(218, 77, 105),
+    rgba(218, 77, 105, 0.7)
+  );
+}
+
+.reviews .slide-wrapper .user .user-image {
+  margin-right: 10px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+.reviews .slide-wrapper .user .user-details p:first-child {
+  font-weight: 700;
+}
+.reviews .slide-wrapper .user .user-details p:last-child {
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: rgb(109, 105, 105);
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: -25px;
+}
+
+.arrow--right {
+  left: auto;
+  right: -25px;
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 1200px) {
+  .reviews .reviews-wrapper {
+    width: 100%;
+  }
+  .arrow--right {
+    right: 0px;
+  }
+  .arrow--left {
+    left: 0px;
+  }
+}

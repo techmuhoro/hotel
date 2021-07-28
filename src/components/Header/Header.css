@@ -1,0 +1,5 @@
+header {
+  background: linear-gradient(to right, #010a3444, #00ff8823),
+    url('./background.jpg');
+  background-repeat: no-repeat;
+}
